@@ -8,6 +8,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           uri
         }
       }
+      allWpPost {
+        nodes {
+          id
+          uri
+        }
+      }
     }
   `)
   // Handle errors
@@ -23,6 +29,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       component: require.resolve(`./src/templates/page-template.js`),
       context: {
         id: page.id,
+      },
+    })
+  })
+
+  const posts = result.data.allWpPost.nodes
+  posts.forEach(post => {
+    createPage({
+      path: `/blog${post.uri}`,
+      component: require.resolve(`./src/templates/post-template.js`),
+      context: {
+        id: post.id,
       },
     })
   })
