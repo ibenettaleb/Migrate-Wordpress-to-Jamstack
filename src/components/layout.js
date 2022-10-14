@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
-import "@wordpress/block-library/build-style/style.css"
 import "../styles/layout.css"
 
 const Layout = ({ children }) => {
