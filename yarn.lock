@@ -5332,7 +5332,7 @@
     "lodash" "^4.17.21"
     "node-fetch" "^2.6.7"
 
-"gatsby-transformer-sharp@^4.0.0-zz-next.1":
+"gatsby-transformer-sharp@^4.0.0-zz-next.1", "gatsby-transformer-sharp@^4.24.0":
   "integrity" "sha512-60Ro4OZbx9ZdfPUZEBEhJnureqQUEaNizDs4CK5QWlUkAU6RvVYwsuT3uWeEMrXgugaLLyGpQStJ881N7Eeodg=="
   "resolved" "https://registry.npmjs.org/gatsby-transformer-sharp/-/gatsby-transformer-sharp-4.24.0.tgz"
   "version" "4.24.0"
